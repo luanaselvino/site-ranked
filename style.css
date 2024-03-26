@@ -1,21 +1,24 @@
 @charset "UTF-8";
 
 body{
-    background: linear-gradient(229.13deg, #2CF2FF 0%, #980CA4 100%);
-    height: 100p;
+    background: linear-gradient(299.13deg, #2CF2FF 0%, #980CA4 100%);
+    font-family: "Inter", sans-serif;
+    height: 681px;
 }
 
 h1{
-    font: Inter;
     font-weight: 900;
     font-size: 32px;
     color: rgb(255, 255, 255);
-    margin-left: 297px;
+    
+    width: 711px;
+    margin: auto;
+    margin-top: 80px;
 }
 
 .corpo{
     width: 800px;
-    height: 550px;
+    height: 650px;
 
     margin: auto;
     margin-top: 0px;
@@ -23,19 +26,24 @@ h1{
 
 #primeira-fileira {
     display: flex;
+    width: 711px;
+    height: 224px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .coluna-rank{
     max-width: 800px;
     width: 300px;
-    margin: 50px;
     margin-top: 0%;
     margin-bottom: 1px;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 98px;
 }
 
 .elo{
     color: rgba(255, 255, 255, 1);
-    font-family: Inter;
     font-size: 24px;
     font-weight: 600;
     line-height: 29.05px;
@@ -49,15 +57,17 @@ img{
 .box1{
     background-color: rgb(73, 59, 105);
     color: rgba(255, 255, 255, 1);
-    font-family: Inter;
     font-size: 22px;
-   
     border-radius: 10px;
 
     display: flex;
 
     width: 313px;
     height: 97px;
+}
+
+input{
+    cursor: pointer;
 }
 
 .box1 h2{
@@ -72,8 +82,8 @@ img{
     width: 711px;
     height: 224px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -87,8 +97,8 @@ img{
 .box2{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(89, 59, 105, 1);
-    font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
+   
     text-align: left;
     max-width: 800px;
     margin: 20px;
@@ -97,16 +107,52 @@ img{
     border-radius: 10px;
     
     display: flex
-
 }
 
 .box2 h2{
     margin-left: 20px;
 }
 
-.box2 input{
-    
-}
+  .checkbutton {
+    display: none;
+  }
+
+  .button{
+    margin: auto;
+    margin-right: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    background-color: rgba(66, 69, 103, 1);
+
+    width: 60px;
+    height: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+  }
+  
+  .slider {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 34px;
+    transition: all .5s ease-in-out;
+  }
+  
+  .checkbutton:checked ~ .switch {
+    background-color: rgb(120, 124, 184);
+  }
+  
+  .checkbutton:checked ~ .switch .slider {
+    transform: translateX(35px);
+  }
 
 #terceira-fileira{
     color: rgba(212, 212, 212, 1);
@@ -126,14 +172,23 @@ img{
     color: rgba(212, 212, 212, 1);
     font-family: Inter;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 18.15px;
-    text-align: left;
+    
+    text-align: center;
     margin: 20px;
 
     width: 209px;
     height: 35px;
     border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+#aplicarCupom ::placeholder{
+    color: rgba(212, 212, 212, 1);
+    text-align: center;
+    font-size: 18px;
+    font-family: Inter;
 }
 
 #preco{
@@ -143,10 +198,13 @@ img{
 
     font-family: Inter;
     justify-content: center;
+    align-content: center;
+    text-align: center;
 
     width: 145px;
     height: 43px;
     margin: 20px;
+    margin-left: 0px;
     border-radius: 10px;
 }
 #total{
@@ -155,7 +213,6 @@ img{
 
 #valor{
     font-size: 11px;
-    
     margin-left: 10px;
 }
 
@@ -170,6 +227,11 @@ img{
     margin-right: 20px;
     margin-top: 15px;
     border-radius: 10px;
+    border: none;
+
+    width: 156px;
+    height: 50px;
+}
 
     width: 156px;
     height: 50px;
