@@ -3,62 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/Gold_1_Rank 1.png" type="image/x-icon">
+    <title>Site treino</title>
 </head>
 <body>
-    <div class="titulo"><h1>Escolha o Rank que deseja subir</h1></div>
+    <div class="corpo">
+        <h1>Escolha o Rank que deseja subir</h1>
 
-<div class="retangulo-maior">
-        <div id="eloatual">
-            <h1>Elo Atual</h1>
-            <div class="box-rank">
-                <img src="imagens/Bronze_2_Rank 1.png" alt="">
-                <h2>Bronze 2</h2>
+        <div id="primeira-fileira">
+            <div class="coluna-rank">
+                <div class="elo">
+                    <h2>Elo atual</h2>
+                </div>
+
+                <div class="box1" id="bronze2">
+                    <img src="imagens/Bronze_2_Rank 1.png" alt="">
+                    <h2>Bronze 2</h2>
+                </div>
+            </div>
+            <div class="coluna-rank">
+                <div class="elo">
+                    <h2>Elo Desejado</h2>
+                </div>
+                
+                <div class="box1" id="ouro1">
+                    <img src="imagens/Gold_1_Rank 1.png" alt="">
+                    <h2>Ouro 1</h2>
+                </div>
             </div>
         </div>
-        
-        <div id="elodesejado" class="box-rank">
-            
-            <div class="retangulo-menor primeira-fileira"><h2>Elo Atual</h2>
+
+        <div id="segunda-fileira">
+            <div class="coluna-config">
+                <div class="box2" id="livestream">
+                    
+                    <h2>Live Stream</h2>
+                    <div class="button">
+                        <input type="checkbox" class="checkbutton" id="liveStream" checked />
+                        <label for="liveStream" class="switch">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="box2" id="escolhaagentes">
+                    
+                    <h2>Escolha Agentes</h2>
+                    <div class="button">
+                        <input type="checkbox" class="checkbutton" id="escolhaAgentes" />
+                        <label for="escolhaAgentes" class="switch">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+
+                </div>
             </div>
-            <div class="retangulo-menor segunda-fileira"><img src="imagens/Gold_1_Rank 1.png" alt="">Ouro 1
-            </div>
             
+            <div class="coluna-config">
+                <div class="box2" id="escondaseunick">
+
+                    <h2>Esconda seu Nick</h2>
+                    <div class="button">
+                        <input type="checkbox" class="checkbutton" id="escondaSeuNick" />
+                        <label for="escondaSeuNick" class="switch">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="box2" id="umavitoriaextra">
+                    
+                    <h2>Uma Vitória Extra</h2>
+                    <div class="button">
+                        <input type="checkbox" class="checkbutton" id="umaVitoriaExtra" />
+                        <label for="umaVitoriaExtra" class="switch">
+                        <span class="slider"></span>
+                    </div>
+
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="terceira-fileira">
+            <div id="aplicarCupom">
+                <input type="text" maxlength="16" id="aplicar-cupom" placeholder="Aplicar um cumpom">
+            </div>
+            <div id="preco">
+                <div id="total">
+                    <h2>Total</h2>
+                </div>
+                <div id="valor">
+                    <h2>R$  0,00</h2> 
+                </div>
+            </div>
+            <div id="iniciarBoost">
+                <input type="button" value="Iniciar Boost">
+            </div>
         </div>
     </div>
-
-    <div class="">
-        <div class="">
-            Live Stream
-        </div>
-        <div class="">
-            Esconda o Nick
-        </div>
-
-        <div class="">
-            Escolha o Agentes
-        </div>
-        <div class="">
-            Uma vitória extra
-        </div>
-
-
-    <div class="toggle">
-        <div class="">
-            Aplicar um cupom
-        </div>
-        <div class="">
-            <div class="">
-                Total
-            </div>
-            <div class="">
-                R$ 35,40
-            </div>
-        <div class="">
-            Iniciar Boost
-        </div>
-    </div> 
-</div>
 </body>
 </html>
