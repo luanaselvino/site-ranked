@@ -134,7 +134,6 @@ input{
     padding: 5px;
     transition: all .5s ease-in-out;
     cursor: pointer;
-
   }
   
   .slider {
@@ -203,17 +202,20 @@ input{
 
     width: 145px;
     height: 43px;
-    margin: 20px;
+    margin: auto;
     margin-left: 0px;
     border-radius: 10px;
 }
+
 #total{
     font-size: 10px;
+    margin-top: 2px;
 }
 
 #valor{
     font-size: 11px;
     margin-left: 10px;
+    margin-top: 0px;
 }
 
 #iniciarBoost input{
@@ -225,13 +227,9 @@ input{
     line-height: 24.2px;
     margin-left: 125px;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 13.3px;
     border-radius: 10px;
     border: none;
-
-    width: 156px;
-    height: 50px;
-}
 
     width: 156px;
     height: 50px;
